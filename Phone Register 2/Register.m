@@ -6,13 +6,13 @@
 //  Copyright © 2015 LI Leonel G. Pérez Ramos. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "Register.h"
 
-@interface ViewController ()
+@interface Register ()
 
 @end
 
-@implementation ViewController
+@implementation Register
 
 - (void)viewDidLoad {
     [super viewDidLoad];

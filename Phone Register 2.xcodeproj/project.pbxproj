@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B9869B181C34D1C20058D38E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9869B171C34D1C20058D38E /* main.m */; };
 		B9869B1B1C34D1C20058D38E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9869B1A1C34D1C20058D38E /* AppDelegate.m */; };
-		B9869B1E1C34D1C20058D38E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9869B1D1C34D1C20058D38E /* ViewController.m */; };
+		B9869B1E1C34D1C20058D38E /* Register.m in Sources */ = {isa = PBXBuildFile; fileRef = B9869B1D1C34D1C20058D38E /* Register.m */; };
 		B9869B211C34D1C20058D38E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9869B1F1C34D1C20058D38E /* Main.storyboard */; };
 		B9869B241C34D1C20058D38E /* Phone_Register_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9869B221C34D1C20058D38E /* Phone_Register_2.xcdatamodeld */; };
 		B9869B261C34D1C20058D38E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9869B251C34D1C20058D38E /* Assets.xcassets */; };
@@ -21,8 +21,8 @@
 		B9869B171C34D1C20058D38E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9869B191C34D1C20058D38E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9869B1A1C34D1C20058D38E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B9869B1C1C34D1C20058D38E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B9869B1D1C34D1C20058D38E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B9869B1C1C34D1C20058D38E /* Register.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Register.h; sourceTree = "<group>"; };
+		B9869B1D1C34D1C20058D38E /* Register.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Register.m; sourceTree = "<group>"; };
 		B9869B201C34D1C20058D38E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9869B231C34D1C20058D38E /* Phone_Register_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Phone_Register_2.xcdatamodel; sourceTree = "<group>"; };
 		B9869B251C34D1C20058D38E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,10 +60,8 @@
 		B9869B151C34D1C20058D38E /* Phone Register 2 */ = {
 			isa = PBXGroup;
 			children = (
-				B9869B191C34D1C20058D38E /* AppDelegate.h */,
-				B9869B1A1C34D1C20058D38E /* AppDelegate.m */,
-				B9869B1C1C34D1C20058D38E /* ViewController.h */,
-				B9869B1D1C34D1C20058D38E /* ViewController.m */,
+				B9869B301C34D28A0058D38E /* Main */,
+				B9869B311C34D2C50058D38E /* User */,
 				B9869B1F1C34D1C20058D38E /* Main.storyboard */,
 				B9869B251C34D1C20058D38E /* Assets.xcassets */,
 				B9869B271C34D1C20058D38E /* LaunchScreen.storyboard */,
@@ -80,6 +78,24 @@
 				B9869B171C34D1C20058D38E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9869B301C34D28A0058D38E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B9869B191C34D1C20058D38E /* AppDelegate.h */,
+				B9869B1A1C34D1C20058D38E /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		B9869B311C34D2C50058D38E /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B9869B1C1C34D1C20058D38E /* Register.h */,
+				B9869B1D1C34D1C20058D38E /* Register.m */,
+			);
+			name = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9869B241C34D1C20058D38E /* Phone_Register_2.xcdatamodeld in Sources */,
-				B9869B1E1C34D1C20058D38E /* ViewController.m in Sources */,
+				B9869B1E1C34D1C20058D38E /* Register.m in Sources */,
 				B9869B1B1C34D1C20058D38E /* AppDelegate.m in Sources */,
 				B9869B181C34D1C20058D38E /* main.m in Sources */,
 			);
@@ -266,6 +282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Phone Register 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LeonelGPR.Phone-Register-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Phone Register 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LeonelGPR.Phone-Register-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
